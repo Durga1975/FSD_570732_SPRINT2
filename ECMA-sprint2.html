@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h1>Function</h1>
+
+<p>This demonstrates a regular function, NOT an arrow function.</p>
+
+<p id="letdemo"></p>
+  
+
+<script>
+letFunction = function() {
+   let count = 100
+   
+   const number = 42;
+
+    try {
+      number = 99;
+    } catch (err) {
+      alert(err);
+      // expected output: TypeError: invalid assignment to const `number'
+      // Note - error messages will vary depending on browser
+    }
+
+alert(number);
+
+const materials = [
+  'Hydrogen',
+  'Helium',
+  'Lithium',
+  'Beryllium'
+];
+
+alert(materials.map(material => material.length));
+  return count;
+}
+
+document.getElementById("letdemo").innerHTML = letFunction();
+</script>
+
+</body>
+</html>
